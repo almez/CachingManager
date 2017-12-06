@@ -9,3 +9,4 @@
 /src/CachingManager.Tests/obj
 tools/**
 !tools/packages.config
+/.vs
