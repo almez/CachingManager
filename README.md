@@ -5,7 +5,7 @@ It's a wrapper library for [Microsoft.Extensions.Caching.Memory.MemoryCache] tar
 
 ## Build Server
 
- [![Build status](https://ci.appveyor.com/api/projects/status/dvx3890y4xvc204g?svg=true)](https://ci.appveyor.com/project/almez/cachingmanager)
+ [![Build status](https://ci.appveyor.com/api/projects/status/a3uxxqdk0e6incv1?svg=true)](https://ci.appveyor.com/project/almez/cachingmanager-kw9tl)
 
  ## Kick-start
 
