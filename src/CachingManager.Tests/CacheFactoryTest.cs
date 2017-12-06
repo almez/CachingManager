@@ -27,7 +27,7 @@ namespace CachingManager.Tests
             Assert.True(result);
         }
 
-        [Fact(DisplayName = "Factory: Throws DuplicatedNameEXception for duplicated name cache.", Skip = "Investigation")]
+        [Fact(DisplayName = "Factory: Throws DuplicatedNameEXception for duplicated name cache.")]
         public void CreateCache_WithDuplicatedName_ThrowsDuplicatedNameException()
         {
             //Arrange
