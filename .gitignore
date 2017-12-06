@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs/CachingManager/v15
+/src/CachingManager/bin
+/src/CachingManager/obj
+/src/CachingManager.Tests/bin
+/src/CachingManager.Tests/obj
+tools/**
+!tools/packages.config
