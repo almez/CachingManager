@@ -5,7 +5,20 @@ It's a wrapper library for [Microsoft.Extensions.Caching.Memory.MemoryCache] tar
 
 ## Build Server
 
- [![Build status](https://ci.appveyor.com/api/projects/status/dvx3890y4xvc204g?svg=true)](https://ci.appveyor.com/project/almez/cachingmanager)
+ [![Build status](https://ci.appveyor.com/api/projects/status/a3uxxqdk0e6incv1?svg=true)](https://ci.appveyor.com/project/almez/cachingmanager-kw9tl)
+
+
+## NuGet Package
+This project is available as NuGet package being updated after each successfull build.
+
+You can have navigate to NuGet link  https://www.nuget.org/packages/CachingManager
+
+You can also install to your project as simple as :
+
+```
+PM> Install-Package CachingManager
+```
+
 
  ## Kick-start
 
