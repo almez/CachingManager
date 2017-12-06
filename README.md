@@ -1,6 +1,6 @@
-# CachingManager
+# Caching Manager (.NET CORE 2.0)
 
-It's a wrapper library for [Microsoft.Extensions.Caching.Memory.MemoryCache] targeting .net core 2.0, allow you to create multiple instances from MEmoryCache Type and keep them all under your control in a centralized-place which is CacheManager.
+It's a wrapper library for [Microsoft.Extensions.Caching.Memory.MemoryCache] targeting .net core 2.0, allow you to create multiple instances from MemoryCache Type and keep them all under your control in a centralized-place which is CacheManager.
 
 
 ## Build Server
