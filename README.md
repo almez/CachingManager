@@ -1,6 +1,6 @@
-# CachingManager
+# Caching Manager (.NET CORE 2.0)
 
-It's a wrapper library for [Microsoft.Extensions.Caching.Memory.MemoryCache] targeting .net core 2.0, allow you to create multiple instances from MEmoryCache Type and keep them all under your control in a centralized-place which is CacheManager.
+It's a wrapper library for [Microsoft.Extensions.Caching.Memory.MemoryCache] targeting .net core 2.0, allow you to create multiple instances from MemoryCache Type and keep them all under your control in a centralized-place which is CacheManager.
 
 
 ## Build Server
@@ -9,9 +9,10 @@ It's a wrapper library for [Microsoft.Extensions.Caching.Memory.MemoryCache] tar
 
 
 ## NuGet Package
-This project is available as NuGet package being updated after each successfull build.
 
-You can have navigate to NuGet link  https://www.nuget.org/packages/CachingManager
+This project is available as NuGet package being updated after each successfull build (continuous integration).
+
+You can navigate to NuGet link  https://www.nuget.org/packages/CachingManager
 
 You can also install to your project as simple as :
 
