@@ -9,9 +9,10 @@ It's a wrapper library for [Microsoft.Extensions.Caching.Memory.MemoryCache] tar
 
 
 ## NuGet Package
-This project is available as NuGet package being updated after each successfull build.
 
-You can have navigate to NuGet link  https://www.nuget.org/packages/CachingManager
+This project is available as NuGet package being updated after each successfull build (continuous integration).
+
+You can navigate to NuGet link  https://www.nuget.org/packages/CachingManager
 
 You can also install to your project as simple as :
 
