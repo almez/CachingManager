@@ -64,7 +64,30 @@ Task("Run-Unit-Tests")
 Task("Package")
 	.IsDependentOn("Run-Unit-Tests")
 	.Does(() => {
-		NuGetPack("./CachingManager.nuspec", new NuGetPackSettings());
+		NuGetPack("./CachingManager.nuspec", 
+					new NuGetPackSettings() {
+									 //Id = "TestNuget",
+                                     //Version                 = "0.0.0.1",
+                                     //Title                   = "The tile of the package",
+                                     //Authors                 = new[] {"John Doe"},
+                                     //Owners                  = new[] {"Contoso"},
+                                     //Description             = "The description of the package",
+                                     //Summary                 = "Excellent summary of what the package does",
+                                     //ProjectUrl              = new Uri("https://github.com/SomeUser/TestNuget/"),
+                                     //IconUrl                 = new Uri("http://cdn.rawgit.com/SomeUser/TestNuget/master/icons/testnuget.png"),
+                                     //LicenseUrl              = new Uri("https://github.com/SomeUser/TestNuget/blob/master/LICENSE.md"),
+                                     //Copyright               = "Some company 2015",
+                                     //ReleaseNotes            = new [] {"Bug fixes", "Issue fixes", "Typos"},
+                                     //Tags                    = new [] {"Cake", "Script", "Build"},
+                                     //RequireLicenseAcceptance= false,
+                                     //Symbols                 = false,
+                                     //NoPackageAnalysis       = true,
+                                     Files                   = new [] {
+                                                                          new NuSpecContent {Source = "./src/CachingManager/bin/Release/netcoreapp2.0/CachingManager.dll", Target = "bin"},
+                                                                       },
+                                     BasePath                = "./src/CachingManager/bin/Release/netcoreapp2.0/",
+                                     //OutputDirectory         = "./nuget"
+					});
 				});
 
 //////////////////////////////////////////////////////////////////////
