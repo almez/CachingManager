@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>CachingManager</id>
-    <version>1.0.0</version>
+    <!--<version>1.0.0</version>-->
     <authors>Alden Menzalgy</authors>
     <owners>Alden Menzalgy</owners>
     <licenseUrl>https://github.com/almez/CachingManager/blob/master/LICENSE</licenseUrl>

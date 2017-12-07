@@ -71,28 +71,9 @@ Task("Package")
 
 		NuGetPack("./CachingManager.nuspec", 
 					new NuGetPackSettings() {
-									 //Id = "TestNuget",
-                                     Version                 = buildVersion + "." + buildNo,
-                                     //Title                   = "The tile of the package",
-                                     //Authors                 = new[] {"John Doe"},
-                                     //Owners                  = new[] {"Contoso"},
-                                     //Description             = "The description of the package",
-                                     //Summary                 = "Excellent summary of what the package does",
-                                     //ProjectUrl              = new Uri("https://github.com/SomeUser/TestNuget/"),
-                                     //IconUrl                 = new Uri("http://cdn.rawgit.com/SomeUser/TestNuget/master/icons/testnuget.png"),
-                                     //LicenseUrl              = new Uri("https://github.com/SomeUser/TestNuget/blob/master/LICENSE.md"),
-                                     //Copyright               = "Some company 2015",
-                                     //ReleaseNotes            = new [] {"Bug fixes", "Issue fixes", "Typos"},
-                                     //Tags                    = new [] {"Cake", "Script", "Build"},
-                                     //RequireLicenseAcceptance= false,
-                                     //Symbols                 = false,
-                                     //NoPackageAnalysis       = true,
-                                     Files                   = new [] {
-                                                                          new NuSpecContent {Source = "./src/CachingManager/bin/Release/netcoreapp2.0/CachingManager.dll", Target = "bin"},
-                                                                       },
-                                     //BasePath                = "./src/CachingManager/bin/Release/netcoreapp2.0/",
-                                     //OutputDirectory         = "./nuget"
-					});
+                                     Version = buildVersion,
+                                     Files = new [] { new NuSpecContent {Source = "./src/CachingManager/bin/Release/netcoreapp2.0/CachingManager.dll", Target = "bin"}, },
+											});
 				});
 
 //////////////////////////////////////////////////////////////////////
