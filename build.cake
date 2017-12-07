@@ -85,7 +85,7 @@ Task("Package")
                                      Files                   = new [] {
                                                                           new NuSpecContent {Source = "./src/CachingManager/bin/Release/netcoreapp2.0/CachingManager.dll", Target = "bin"},
                                                                        },
-                                     BasePath                = "./src/CachingManager/bin/Release/netcoreapp2.0/",
+                                     //BasePath                = "./src/CachingManager/bin/Release/netcoreapp2.0/",
                                      //OutputDirectory         = "./nuget"
 					});
 				});
