@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <AssemblyName>CachingManager</AssemblyName>
     <RootNamespace>CachingManager</RootNamespace>
+    <Version>1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

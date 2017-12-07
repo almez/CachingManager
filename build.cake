@@ -64,10 +64,15 @@ Task("Run-Unit-Tests")
 Task("Package")
 	.IsDependentOn("Run-Unit-Tests")
 	.Does(() => {
+
+		var buildNo = BuildSystem.AppVeyor.Environment.Build.Number;
+		var buildVersion = BuildSystem.AppVeyor.Environment.Build.Version;
+		var buildId = BuildSystem.AppVeyor.Environment.Build.Id;
+
 		NuGetPack("./CachingManager.nuspec", 
 					new NuGetPackSettings() {
 									 //Id = "TestNuget",
-                                     //Version                 = "0.0.0.1",
+                                     Version                 = buildVersion + "." + buildNo,
                                      //Title                   = "The tile of the package",
                                      //Authors                 = new[] {"John Doe"},
                                      //Owners                  = new[] {"Contoso"},
