@@ -72,7 +72,7 @@ Task("Package")
 		NuGetPack("./CachingManager.nuspec", 
 					new NuGetPackSettings() {
                                      Version = buildVersion,
-                                     Files = new [] { new NuSpecContent {Source = "./src/CachingManager/bin/Release/netcoreapp2.0/CachingManager.dll", Target = "lib/{framework name}[{version}]"}, },
+                                     Files = new [] { new NuSpecContent {Source = "./src/CachingManager/bin/Release/netcoreapp2.0/CachingManager.dll", Target = "lib/netcoreapp2.0"}, },
 											});
 				});
 
