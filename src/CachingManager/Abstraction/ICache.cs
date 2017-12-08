@@ -1,6 +1,8 @@
-﻿namespace CachingManager.Abstraction
+﻿using System;
+
+namespace CachingManager.Abstraction
 {
-    public interface ICache
+    public interface ICache : IDisposable
     {
         string Name { get; }
 

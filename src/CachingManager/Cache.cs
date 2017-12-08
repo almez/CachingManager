@@ -89,5 +89,14 @@ namespace CachingManager
         }
 
         #endregion
+
+        #region IDisposable Implementation
+
+        public void Dispose()
+        {
+            _cache?.Dispose();
+        }
+
+        #endregion
     }
 }
