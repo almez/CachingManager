@@ -39,10 +39,6 @@ namespace CachingManager
 
         #region Public Methods
 
-        public void RegisterCache(ICache cache)
-        {
-            _caches.Add(cache);
-        }
 
         public List<ICache> ListCaches()
         {
@@ -62,6 +58,16 @@ namespace CachingManager
         public void ClearAll()
         {
             _caches.ForEach(cache => cache.Clear());
+        }
+
+        #endregion
+
+
+        #region Internal Methods
+
+        internal void RegisterCache(ICache cache)
+        {
+            _caches.Add(cache);
         }
 
         #endregion

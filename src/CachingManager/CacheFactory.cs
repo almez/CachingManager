@@ -18,5 +18,17 @@ namespace CachingManager
 
             return cache;
         }
+
+        public static Cache<TValue, TKey> GetOrCreateCache<TValue, TKey>(string name, long sizeLimit) where TValue : IMesurable
+        {
+            ICache<TValue, TKey> cache = CacheManager.Instance.FindCacheByName(name) as ICache<TValue, TKey>;
+
+            if (cache == null)
+            {
+                cache = CacheFactory.CreateCache<TValue, TKey>(name, sizeLimit);
+            }
+
+            return (Cache<TValue, TKey>) cache;
+        }
     }
 }
