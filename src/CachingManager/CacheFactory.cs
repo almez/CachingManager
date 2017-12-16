@@ -5,7 +5,7 @@ namespace CachingManager
 {
     public class CacheFactory
     {
-        public static Cache<TValue, TKey> CreateCache<TValue, TKey>(string name, long sizeLimit) where TValue : IMesurable
+        public static ICache<TValue, TKey> CreateCache<TValue, TKey>(string name, long sizeLimit) where TValue : IMesurable
         {
             if (CacheManager.Instance.CacheExists(name))
             {
@@ -19,7 +19,7 @@ namespace CachingManager
             return cache;
         }
 
-        public static Cache<TValue, TKey> GetOrCreateCache<TValue, TKey>(string name, long sizeLimit) where TValue : IMesurable
+        public static ICache<TValue, TKey> GetOrCreateCache<TValue, TKey>(string name, long sizeLimit) where TValue : IMesurable
         {
             ICache<TValue, TKey> cache = CacheManager.Instance.FindCacheByName(name) as ICache<TValue, TKey>;
 
@@ -28,7 +28,7 @@ namespace CachingManager
                 cache = CacheFactory.CreateCache<TValue, TKey>(name, sizeLimit);
             }
 
-            return (Cache<TValue, TKey>) cache;
+            return cache;
         }
     }
 }
